@@ -15,6 +15,6 @@ sudo composer install
 #configure .env - conexao com o banco
 sudo mv .env.example .env
 # Run artisan commands
-sudo php /var/www/typer-api/artisan key:generate
-sudo php /var/www/typer-api/artisan config:cache
-sudo php /var/www/typer-api/artisan route:cache
+sudo php artisan key:generate
+sudo php artisan config:cache
+sudo php artisan route:cache
