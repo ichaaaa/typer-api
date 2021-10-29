@@ -11,8 +11,7 @@ sudo find /var/www/typer-api/bootstrap/cache -type d -exec chmod 775 {} \;
 
 cd /var/www/typer-api
 # Run composer
-sudo composer install
-#configure .env - conexao com o banco
+sudo composer update
 sudo mv .env.example .env
 # Run artisan commands
 sudo php artisan key:generate
